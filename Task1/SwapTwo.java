@@ -1,8 +1,8 @@
-package Tast1;
+package Task1;
 
 import java.util.Scanner;
 
-public class SwapThree {
+public class SwapTwo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,10 +11,10 @@ public class SwapThree {
         System.out.print("Enter second number: ");
         int b = sc.nextInt();
 
-        int temp = a;
-        a = b;
-        b = temp;
-
+        a = a + b;     
+        b = a - b; 
+        a = a - b;
+     
         System.out.println("After Swap: a = " + a + ", b = " + b);
     }
 }
